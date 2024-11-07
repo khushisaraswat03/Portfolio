@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel = "stylesheet" href="style.css"/>
-    <link rel = "stylesheet" href="mediaqueries.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
 </head>
+
 <body>
     <nav id="desktop-nav">
         <div class="logo">Khushi Saraswat</div>
         <div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#Education">Education</a></li>
-                <li><a href="#Projects">Projects</a></li>
-                <li><a href="#Achievements">Achievements</a></li>
-                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
-    <nav id = "hamburger-nav">
-        <div class="logo">Khushi Saraswat</div>
+    <nav id="hamburger-nav">
+        <div class="logo">John Doe</div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -30,42 +33,279 @@
             </div>
             <div class="menu-links">
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#Education" onclick="toggleMenu()">Education</a></li>
-                <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#Achievements" onclick="toggleMenu()">Achievements</a></li>
-                <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
     </nav>
-    <section id = "profile">
-        <div class="section_pic_container">
-            <img src="./assets/profile-pic.png" alt="Khushi Saraswat profile picture">;
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Khushi Saraswat profile picture" />
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">Khushi Saraswat</h1>
-            <p class=""section__text__p2">Frontend Developer</p>
+            <p class="section__text__p2">College Student</p>
             <div class="btn-container">
-                <button 
-                   class="btn btn-color-2" 
-                   onclick="window.open('./assets/resume-example.pdf')">
-                   Download CV
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+                    Download CV
                 </button>
-                <button 
-                    class="btn btn-color-1" 
-                    onclick="location.href='./#contact'">
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
                     Contact Info
                 </button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn profile"
-                class "icon" onclick="location.href='https://www.linkedin.com/in/khushi--saraswat/'"/>
-                <img src="./assets/github.png" alt="My GitLab profile" class "icon"
-                    onclick="location.href='https://gitlab.com/khushisaraswat'"/>
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/khushi--saraswat/'" />
+                <img src="./assets/github.png" alt="My Github profile" class="icon"
+                    onclick="location.href='https://gitlab.com/khushisaraswat'" />
             </div>
         </div>
     </section>
-    <section id="about"
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="text-container">
+                    <p>
+                    Hi, I'm Khushi Saraswat, a second-year B.Tech student in <strong>Information Technology</strong> at <strong>GCET</strong>. I have a strong passion for
+                    coding and technology, which drives me to constantly learn and grow. I am actively involved in the <strong>SheFi Web3</strong> community
+                    and was selected for the <strong>GirlScript Summer of Code (GSSoC) Extended</strong> program, where I had the opportunity to contribute to
+                    meaningful open-source projects.
+                    
+                    In addition to my technical skills, I enjoy writing, sketching, and reading, which help me stay creative and balanced.
+                    My journey as a coder is just beginning, and I am eager to tackle new challenges in web development, algorithms, and
+                    beyond. Feel free to explore my work, and let's connect!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#education'" />
+    </section>
+    <section id="education">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Education</h1>
+        <div class="education-details-container">
+            <div class="education-containers">
+                <div class="details-container">
+                    <h2 class="education-sub-title">Women Engineers(WE) Program by TalentSprint, powered by Google</h2>
+                    <div class="article-container">
+                        <ul class="we-program-experience">
+                            <li>Selected from over 31,000 applicants, I am honored to be part of the Women Engineers Program (WE).</li>
+                            <li>The program focuses on building technical and leadership skills through impactful workshops and training.</li>
+                            <li>Collaborating with peers and mentors has given me hands-on experience solving real-world challenges.</li>
+                            <li>Being in a supportive community of women engineers inspires and motivates me to keep growing.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="education-sub-title">Galgotias College Of Engineering And Technology</h2>
+                    <div class="article-container">
+                        <ul class="education-experience">
+                            <li>Currently pursuing B.Tech in Information Technology at GCET, gaining a solid foundation in computer science and
+                                engineering.</li>
+                            <li>Developing a strong understanding of key technical areas, including programming, algorithms, databases, and web
+                                development through coursework and projects.</li>
+                            <li>Actively seeking opportunities to apply my knowledge and expand my skills with a focus on problem-solving and
+                                innovation in technology.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    <section id="skills">
+        <p class="section__text__p1">View My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Technical Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Django</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>SQlite/MySQL</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>GitLab/GitHub</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>LaTex,Graphviz</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Ubuntu</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Soft Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Strong Communication</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Team collaboration</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Problem-Solving</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Strong Leadership</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Critical Thinking</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Time Management</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Creativity</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Adaptibilty</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.jpg" alt="Project 1" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">PollPulse</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://gitlab.com/ctrlz3/pollpulse'">
+                            GitLab
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://pollpulse.pythonanywhere.com/'">
+                            Live Demo
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.jpg" alt="Vaultopia" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Vaultopia</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://gitlab.com/khushisaraswat/vaultopia'">
+                            GitLab
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:khushisaraswat03@gmail.com">khushisaraswat03@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com/in/khushi--saraswat/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Khushi Saraswat. All Rights Reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
